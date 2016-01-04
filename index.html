@@ -3,11 +3,69 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/app.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+
+    <header>
+        <ul>
+            <li><a href="#" id="min-btn"><i class="fa fa-minus"></i></a></li>
+            <li><a href="#" id="max-btn"><i class="fa fa-arrows-alt"></i></a></li>
+            <li><a href="#" id="close-btn"><i class="fa fa-close"></i></a></li>
+        </ul>
+        <h1>FTP Sync</h1>
+    </header>
+
+    <div class="main-area">
+
+        <aside>
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Impkids</a></li>
+                <li class="is-active"><a href="#">Signet Locks</a></li>
+                <li><a href="#">Motorcycle Exhausts</a></li>
+                <li id="add-project"><a href="#">Add Project +</a></li>
+            </ul>
+        </aside>
+
+        <main>
+
+            <section class="screen screen-padded is-active" id="welcome-screen">
+                <h2 id="welcome-title"></h2>
+                <p>Select a project from the side,
+                    <br>or add a new project to get started.</p>
+            </section>
+
+            <section class="screen screen-padded" id="add-project-screen">
+                <h2>Add Project</h2>
+                <form>
+                    
+                </form>
+            </section>
+
+            <section class="screen" id="project-screen">
+                <ul class="tabs">
+                    <li class="is-active"><a href="#log">Log</a></li>
+                    <li><a href="#config">Config</a></li>
+                </ul>
+
+                <div class="tabs-content">
+                    <div id="log" class="is-active">
+                        Watching for changes...<br>
+                    </div>
+                    <div id="config">
+                        ... config here ...
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="assets/app.js"></script>
+
   </body>
 </html>

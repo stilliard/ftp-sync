@@ -1,28 +1,19 @@
 {
-  "name": "electron-quick-start",
+  "name": "ftp-sync-gui",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Electron GUI app to keep a directory in sync via FTP",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/atom/electron-quick-start.git"
-  },
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
-  "bugs": {
-    "url": "https://github.com/atom/electron-quick-start/issues"
-  },
-  "homepage": "https://github.com/atom/electron-quick-start#readme",
   "devDependencies": {
     "electron-prebuilt": "^0.35.0"
+  },
+  "dependencies": {
+    "chokidar": "^1.4.0",
+    "font-awesome": "^4.5.0",
+    "ftp": "^0.3.10",
+    "jquery": "^2.1.4",
+    "normalize.css": "^3.0.3"
   }
 }

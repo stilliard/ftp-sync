@@ -1,0 +1,129 @@
+
+/*base styling*/
+body {
+    font: 14px/1.36 sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+button {
+    background: #303F9F;
+}
+
+/*header*/
+header {
+    background: #3F51B5;
+    color: #FFF;
+    padding: 1em;
+    -webkit-app-region: drag;
+}
+header h1 {
+    margin: 0;
+}
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    float: right;
+}
+header a {
+    color: #FFF;
+    padding: 1em;
+    -webkit-app-region: no-drag;
+}
+
+/* main area of page, contains projects list and tabed area */
+.main-area {
+    display: flex;
+    flex: 1;
+}
+
+/*main content*/
+main {
+    border-left: 1px solid #CCC;
+    flex: 1;
+}
+
+/*sidebar*/
+aside {
+    width: 30%;
+}
+aside h2 {
+    font-size: smaller;
+    color: #666;
+    padding: 1em 0 0 1em;
+    margin: 0;
+    text-transform: uppercase;
+}
+aside ul {
+    padding: 0;
+    list-style: none;
+}
+aside li {
+    border-bottom: 1px solid #CCC;
+}
+aside a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5em 1em ;
+    display: block;
+}
+aside li:hover a {
+    background: #EEE;
+}
+aside li.is-active a {
+    background: #DDD;
+}
+
+/*add project link*/
+#add-project {
+    font-weight: bold;
+}
+
+/*tabs*/
+.tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+}
+.tabs li {
+    display: block;
+    width: 50%;
+    text-align: center;
+}
+.tabs a {
+    text-decoration: none;
+    color: #FFF;
+    background: #9FA8DA;
+    padding: 1em;
+    display: block;
+    text-transform: uppercase;
+}
+.tabs li.is-active a {
+    background: #7986cb;
+}
+
+.tabs-content > div {
+    padding: 1em;
+    display: none;
+}
+.tabs-content > .is-active {
+    display: block;
+}
+
+/*screen*/
+.screen {
+    display: none;
+}
+.screen.is-active {
+    display: block;
+}
+
+.screen-padded {
+    padding: 1em;
+}

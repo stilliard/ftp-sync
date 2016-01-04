@@ -1,0 +1,23 @@
+{
+	"sites": [
+		{
+			"name": "Signet Locks",
+			"ftp": {
+				"host": "",
+				"user": "",
+				"pass": "",
+				"port": ""
+			}
+		},
+		{
+			"name": "Impkids",
+			"ftp": {
+				"host": "",
+				"user": "",
+				"pass": "",
+				"port": ""
+			}
+		}
+	]
+}
+
